@@ -457,7 +457,7 @@ export default function App() {
                   { label: "LinkedIn", url: "https://www.linkedin.com/in/nishwanth-dk" },
                   { label: "Behance", url: "https://www.behance.net/dknishwanth" },
                   { label: "GitHub", url: "#" },
-                  { label: "Resume (PDF)", url: "/Nishwanth-DK-Resume.pdf" }
+                  { label: "Resume (PDF)", url: "/DK_Nishwanth .pdf" }
                 ].map((link, i) => (
                   <motion.a
                     key={i}
@@ -616,8 +616,8 @@ export default function App() {
                   className="w-full h-auto mix-blend-multiply transition-all duration-700"
                 />
                 <div className="flex flex-col items-center gap-2">
-                  <div className="text-[10px] font-bold uppercase tracking-[0.3em] animate-pulse">
-                    Nishwanth Portfolio
+                  <div className="text-[10px] font-bold uppercase tracking-[0.3em] animate-pulse text-center leading-relaxed">
+                    Just an ordinary designer.<br />From Ooty with Love
                   </div>
                   <div className="w-32 h-[1px] bg-black/10 relative overflow-hidden">
                     <motion.div 
@@ -707,7 +707,7 @@ export default function App() {
           <Header setCurrentPage={setCurrentPage} setIsMenuOpen={setIsMenuOpen} currentPage={currentPage} />
 
           {/* Hero Section */}
-          <section className="flex-grow flex flex-col items-center justify-center pt-2 md:pt-12 py-4 overflow-hidden">
+          <section className="flex-grow flex flex-col items-center justify-center pt-2 md:pt-12 py-4 overflow-visible">
             {/* Mobile-only layout focused on the reference image */}
             <div className="flex md:hidden flex-col items-center w-full max-h-full">
               <motion.div 
@@ -716,7 +716,7 @@ export default function App() {
                 className="flex flex-col items-center mb-4"
               >
                 <div className="flex flex-col items-center">
-                  <span className="text-[16vw] font-serif italic leading-tight tracking-tighter">Nishwanth</span>
+                  <span className="text-[16vw] font-serif italic leading-none tracking-tighter pb-2">Nishwanth</span>
                 </div>
                 {/* Asterisk removed as per request */}
               </motion.div>
@@ -750,9 +750,9 @@ export default function App() {
             {/* Desktop-friendly Hero Layout */}
             <motion.div 
               variants={heroVariants}
-              className="hidden md:flex flex-col items-center justify-center"
+              className="hidden md:flex flex-col items-center justify-center py-8"
             >
-              <span className="text-[12vw] font-serif italic leading-tight tracking-tighter whitespace-nowrap">
+              <span className="text-[12vw] font-serif italic leading-none tracking-tighter">
                 Nishwanth
               </span>
             </motion.div>
@@ -809,7 +809,7 @@ export default function App() {
           </div>
 
           {/* Desktop-only Intro Section */}
-          <section className="hidden md:grid grid-cols-3 gap-8 items-center py-6 border-t border-black/10 mt-auto">
+          <section className="hidden md:grid grid-cols-3 gap-8 items-center py-6 border-t border-black/10 mt-auto -mt-20">
             <motion.div variants={itemVariants} className="flex flex-col items-center md:items-start text-center md:text-left gap-4 order-2 md:order-1 px-4 md:px-0">
               <Sparkle className="w-5 h-5 flex-shrink-0" />
               <p className="text-[9px] md:text-[10px] font-bold leading-relaxed tracking-[0.14em] md:tracking-wider max-w-[280px] md:max-w-[200px] uppercase">
@@ -819,7 +819,7 @@ export default function App() {
 
             <motion.div 
               variants={itemVariants}
-              className="flex justify-center order-1 md:order-2 w-full"
+              className="flex justify-center order-1 md:order-2 w-full -mt-8"
             >
               <div className="relative w-full md:w-[500px] h-56 md:h-[280px] flex items-center justify-center">
                 <video 
