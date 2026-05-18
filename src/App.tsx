@@ -11,6 +11,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Sparkle, Asterisk } from "lucide-react";
+import { Analytics } from "@vercel/analytics/react";
 
 const navItems = [
   { number: "01", label: "Projects" },
@@ -850,6 +851,7 @@ export default function App() {
           </motion.footer>
         </motion.main>
       )}
+      <Analytics />
       </>
     );
   }
